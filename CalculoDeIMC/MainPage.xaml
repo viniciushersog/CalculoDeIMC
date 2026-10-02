@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculoDeIMC.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20">
+
+            <Image
+                Source="dotnet_bot.png.jpg"
+                HeightRequest="150"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Saiba seu IMC"
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Preencha os dados"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+          
+            <Entry
+                x:Name="NomeInput"
+                Placeholder="Digite seu nome"
+                Keyboard="Text" />
+
+            
+            <Entry
+                x:Name="IdadeInput"
+                Placeholder="Digite sua idade"
+                Keyboard="Numeric" />
+
+            
+            <Entry
+                x:Name="SexoInput"
+                Placeholder="Digite seu Gênero"
+                Keyboard="Text" />
+
+            
+            <Label
+                Text="Sua altura"
+                FontSize="18"
+                FontAttributes="Bold" />
+
+            <Label
+                x:Name="AlturaLabel"
+                Text="1,70 m"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Slider
+                x:Name="AlturaSlider"
+                Minimum="1.00"
+                Maximum="2.20"
+                Value="1.70"
+                ValueChanged="AlturaSlider_ValueChanged" />
+
+            
+            <Label
+                Text="Seu peso atual"
+                FontSize="18"
+                FontAttributes="Bold" />
+
+            <Label
+                x:Name="PesoLabel"
+                Text="70 kg"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Slider
+                x:Name="PesoSlider"
+                Minimum="30"
+                Maximum="200"
+                Value="70"
+                ValueChanged="PesoSlider_ValueChanged" />
+
+            <Label
+                Text="Peso ideal sugerido"
+                FontSize="18"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="PesoIdealLabel"
+                Text="Calculando..."
+                FontSize="18"
+                TextColor="Green"
+                HorizontalOptions="Center" />
+
+           
+            <Button
+                x:Name="CounterBtn"
+                Text="Calcular IMC"
+                Clicked="OnCounterClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

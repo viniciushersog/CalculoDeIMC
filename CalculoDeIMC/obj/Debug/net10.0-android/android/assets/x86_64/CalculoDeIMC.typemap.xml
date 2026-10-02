@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="CalculoDeIMC" mvid="e37cbb6ec2aa4745969ea1eb5a7c2b0c">
+  <java-to-managed>
+    <entry java-name="crc64385979a603d4ff1a/MainActivity" managed-name="CalculoDeIMC.MainActivity, CalculoDeIMC" managed-type-token-id="33554442" />
+    <entry java-name="crc64385979a603d4ff1a/MainApplication" managed-name="CalculoDeIMC.MainApplication, CalculoDeIMC" managed-type-token-id="33554443" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64385979a603d4ff1a/MainActivity" managed-name="CalculoDeIMC.MainActivity, CalculoDeIMC" managed-type-token-id="33554442" />
+    <entry java-name="crc64385979a603d4ff1a/MainApplication" managed-name="CalculoDeIMC.MainApplication, CalculoDeIMC" managed-type-token-id="33554443" />
+  </managed-to-java>
+</api>
